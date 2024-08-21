@@ -1,3 +1,13 @@
+:root {
+  --primary-ff: "Inter", sans-serif;
+
+  --primary-clr: #e9ecf8;
+  --secondary-clr: #495057;
+  --terciary-clr: #343a40;
+
+  --accent-clr: #0a3871;
+}
+
 *,
 *:after,
 *:before {
@@ -6,7 +16,13 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
 body {
   font-size: 100%;
   list-style-type: none;
+  background-color: #f3f5fc;
+}
+
+img {
+  max-width: 100%;
 }

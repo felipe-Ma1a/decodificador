@@ -6,8 +6,42 @@
     <title>Decodificador</title>
 
     <link rel="stylesheet" href="./globals.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Desafio Decodificador</h1>
+    <header>
+      <img src="./public/images/Logo.png" alt="Logo Alura" class="logo-alura" />
+    </header>
+    <main class="container">
+      <section class="message-section">
+        <textarea class="text" placeholder="Digite seu texto"></textarea>
+
+        <div class="btn-section">
+          <p class="rules-info">
+            <img
+              src="./public/images/bi_exclamation-circle-fill.png"
+              alt="Icone de eSxclamação"
+            />
+            Apenas letras minúsculas e sem acento.
+          </p>
+
+          <div class="btn-group">
+            <button class="cript-btn">Criptografar</button>
+            <button class="decript-btn">Descriptografar</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="decript-section">
+        <img
+          src="./public/images/High quality products 1 1.svg"
+          alt="Imagem de um boneco azul"
+        />
+        <h2 class="decript-section__title">Nenhuma mensagem encontrada</h2>
+        <p class="decript-section__paragraph">
+          Digite um texto que você deseja criptografar ou descriptografar.
+        </p>
+      </section>
+    </main>
   </body>
 </html>

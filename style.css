@@ -1,0 +1,98 @@
+.logo-alura {
+  padding-inline-start: 5.25rem;
+  padding-block-start: 2.5rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.text,
+.text::placeholder {
+  color: var(--accent-clr);
+}
+
+.text {
+  margin-block-start: 5rem;
+  resize: none;
+  max-width: 680px;
+  height: 669px;
+  font: 400 2rem var(--primary-ff);
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+
+.btn-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.rules-info {
+  display: flex;
+  gap: 0.5rem;
+  font: 400 0.75rem var(--primary-ff);
+  color: var(--secondary-clr);
+}
+
+.btn-group {
+  display: flex;
+  gap: 1.5rem;
+  margin-block-start: 1rem;
+}
+
+.cript-btn,
+.decript-btn {
+  cursor: pointer;
+  border: 0;
+  width: 328px;
+  height: 67px;
+  border-radius: 1.5rem;
+  font: 400 1rem var(--primary-ff);
+}
+
+.cript-btn {
+  background-color: var(--accent-clr);
+  color: var(--primary-clr);
+}
+
+.decript-btn {
+  color: var(--accent-clr);
+  border: 1px solid var(--accent-clr);
+  background-color: var(--primary-clr);
+}
+
+.decript-section {
+  width: 100%;
+  max-width: 400px;
+  background-color: #f9f9f9;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.decript-section__title,
+.decript-section__paragraph {
+  max-width: 336px;
+  text-align: center;
+}
+
+.decript-section__title {
+  font: 700 1.5rem var(--primary-ff);
+  color: var(--terciary-clr);
+  margin-block-start: 2rem;
+  margin-block-end: 1rem;
+}
+
+.decript-section__paragraph {
+  font: 400 1rem var(--primary-ff);
+  color: var(--secondary-clr);
+}
