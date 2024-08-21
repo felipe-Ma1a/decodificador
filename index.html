@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Decodificador</title>
 
-    <link rel="stylesheet" href="./globals.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <header>
@@ -14,34 +14,58 @@
     </header>
     <main class="container">
       <section class="message-section">
-        <textarea class="text" placeholder="Digite seu texto"></textarea>
+        <textarea
+          class="text"
+          id="input-text"
+          placeholder="Digite seu texto"
+        ></textarea>
 
         <div class="btn-section">
           <p class="rules-info">
             <img
               src="./public/images/bi_exclamation-circle-fill.png"
-              alt="Icone de eSxclamação"
+              alt="Icone de exclamação"
             />
             Apenas letras minúsculas e sem acento.
           </p>
 
           <div class="btn-group">
-            <button class="cript-btn">Criptografar</button>
-            <button class="decript-btn">Descriptografar</button>
+            <button class="cript-btn" onclick="criptografar()">
+              Criptografar
+            </button>
+            <button class="decript-btn" onclick="descriptografar()">
+              Descriptografar
+            </button>
           </div>
         </div>
       </section>
 
-      <section class="decript-section">
+      <section class="decript-section" id="result-section">
         <img
           src="./public/images/High quality products 1 1.svg"
           alt="Imagem de um boneco azul"
+          id="result-image"
         />
-        <h2 class="decript-section__title">Nenhuma mensagem encontrada</h2>
-        <p class="decript-section__paragraph">
+        <h2 class="decript-section__title" id="result-title">
+          Nenhuma mensagem encontrada
+        </h2>
+        <p class="decript-section__paragraph" id="result-paragraph">
           Digite um texto que você deseja criptografar ou descriptografar.
         </p>
+        <button
+          class="copy-btn"
+          id="copy-btn"
+          style="display: none"
+          onclick="copiarTexto()"
+        >
+          Copiar
+        </button>
       </section>
     </main>
+    <footer class="footer">
+      <p>Felipe Maia - 2024</p>
+    </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>

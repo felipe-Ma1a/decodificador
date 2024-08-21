@@ -6,6 +6,7 @@
 .container {
   width: 100%;
   max-width: 1280px;
+  padding-inline: 2rem;
   margin-inline: auto;
   display: flex;
   justify-content: space-between;
@@ -20,6 +21,7 @@
 .text {
   margin-block-start: 5rem;
   resize: none;
+  width: 100%;
   max-width: 680px;
   height: 669px;
   font: 400 2rem var(--primary-ff);
@@ -42,16 +44,19 @@
 }
 
 .btn-group {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
   margin-block-start: 1rem;
 }
 
 .cript-btn,
-.decript-btn {
+.decript-btn,
+.copy-btn {
   cursor: pointer;
   border: 0;
-  width: 328px;
+  width: 100%;
+  max-width: 328px;
   height: 67px;
   border-radius: 1.5rem;
   font: 400 1rem var(--primary-ff);
@@ -72,6 +77,7 @@
   width: 100%;
   max-width: 400px;
   background-color: #f9f9f9;
+  box-shadow: 0px 24px 32px -8px #00000014;
   border-radius: 2rem;
   display: flex;
   flex-direction: column;
@@ -95,4 +101,34 @@
 .decript-section__paragraph {
   font: 400 1rem var(--primary-ff);
   color: var(--secondary-clr);
+}
+
+.copy-btn {
+  border: 1px solid var(--accent-clr);
+  background-color: transparent;
+}
+
+.result-active {
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+}
+
+.result-active .decript-section__paragraph {
+  margin-block-end: 2rem;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.footer {
+  background-color: var(--accent-clr);
+  color: var(--primary-clr);
+}
+
+.footer p {
+  font: 400 1rem var(--primary-ff);
+  display: flex;
+  justify-content: center;
+  margin-block-start: 4.7em;
 }
